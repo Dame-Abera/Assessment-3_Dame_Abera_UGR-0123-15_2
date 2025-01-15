@@ -15,6 +15,7 @@ function calculateResult() {
         currentInput = eval(currentInput).toString();
         document.getElementById('display').value = currentInput;
     } catch (error) {
+        
         document.getElementById('display').value = 'Error';
         currentInput = '';
     }
