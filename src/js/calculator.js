@@ -12,10 +12,12 @@ function clearDisplay() {
 
 function calculateResult() {
     try {
+
         currentInput = eval(currentInput).toString();
         document.getElementById('display').value = currentInput;
-    } catch (error) {
         
+    } catch (error) {
+
         document.getElementById('display').value = 'Error';
         currentInput = '';
     }
